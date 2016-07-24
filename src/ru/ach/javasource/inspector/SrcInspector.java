@@ -17,4 +17,10 @@ public class SrcInspector {
 
 	}
 
+	/**
+	 * @param message
+	 */
+	private static void log(String message) {
+		
+	}
 }
