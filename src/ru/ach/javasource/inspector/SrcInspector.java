@@ -16,10 +16,15 @@ public class SrcInspector {
 	}
 	
 	/**
-	 * Вывод сообщений в основной информационный поток.
+	 * Выводит сообщение в основной информационный поток
 	 * @param message
 	 */
 	private static void output(String message) {
+		if(message == null || message.isEmpty()) {
+			throw new IllegalArgumentException("Сообщение отсутствует");
+		}
+		// Как временный вариант: вывод на системную консоль
+		System.out.println(message);
 	}
 
 	/**
