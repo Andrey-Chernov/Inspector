@@ -8,13 +8,11 @@ package ru.ach.javasource.inspector;
  *
  */
 public class SrcInspector {
-
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		output("Java source code inspector.");
 	}
 	
 	/**
@@ -30,9 +28,9 @@ public class SrcInspector {
 	}
 
 	/**
+	 * Вывод служебной информации и протокола работы. 
 	 * @param message
 	 */
 	private static void log(String message) {
-		
 	}
 }
