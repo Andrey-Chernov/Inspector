@@ -16,6 +16,13 @@ public class SrcInspector {
 		// TODO Auto-generated method stub
 
 	}
+	
+	/**
+	 * @param message
+	 */
+	private static void output(String message) {
+		
+	}
 
 	/**
 	 * @param message
