@@ -18,10 +18,12 @@ public class SrcInspector {
 	}
 	
 	/**
+	 * Выводит сообщение в основной информационный поток
 	 * @param message
 	 */
 	private static void output(String message) {
-		
+		// Как временный вариант: вывод на системную консоль
+		System.out.println(message);
 	}
 
 	/**
