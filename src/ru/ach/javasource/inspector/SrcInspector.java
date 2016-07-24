@@ -22,6 +22,9 @@ public class SrcInspector {
 	 * @param message
 	 */
 	private static void output(String message) {
+		if(message == null || message.isEmpty()) {
+			throw new IllegalArgumentException("—ообщение отсутствует");
+		}
 		//  ак временный вариант: вывод на системную консоль
 		System.out.println(message);
 	}
