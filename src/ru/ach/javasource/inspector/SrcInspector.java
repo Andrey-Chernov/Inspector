@@ -1,10 +1,7 @@
-/**
- * 
- */
 package ru.ach.javasource.inspector;
 
 /**
- * @author Андрей
+ * @author РђРЅРґСЂРµР№
  *
  */
 public class SrcInspector {
@@ -14,21 +11,21 @@ public class SrcInspector {
 	public static void main(String[] args) {
 		output("Java source code inspector.");
 	}
-	
+
 	/**
-	 * Выводит сообщение в основной информационный поток
+	 * Р’С‹РІРѕРґРёС‚ СЃРѕРѕР±С‰РµРЅРёРµ РІ РѕСЃРЅРѕРІРЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹Р№ РїРѕС‚РѕРє
 	 * @param message
 	 */
 	private static void output(String message) {
 		if(message == null || message.isEmpty()) {
-			throw new IllegalArgumentException("Сообщение отсутствует");
+			throw new IllegalArgumentException("РЎРѕРѕР±С‰РµРЅРёРµ РѕС‚СЃСѓС‚СЃС‚РІСѓРµС‚");
 		}
-		// Как временный вариант: вывод на системную консоль
+		// РљР°Рє РІСЂРµРјРµРЅРЅС‹Р№ РІР°СЂРёР°РЅС‚: РІС‹РІРѕРґ РЅР° СЃРёСЃС‚РµРјРЅСѓСЋ РєРѕРЅСЃРѕР»СЊ
 		System.out.println(message);
 	}
 
 	/**
-	 * Вывод служебной информации и протокола работы. 
+	 * Р’С‹РІРѕРґ СЃР»СѓР¶РµР±РЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРё Рё РїСЂРѕС‚РѕРєРѕР»Р° СЂР°Р±РѕС‚С‹.
 	 * @param message
 	 */
 	private static void log(String message) {
