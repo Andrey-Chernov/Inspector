@@ -6,15 +6,15 @@ package ru.ach.javasource.inspector;
  */
 public class SrcInspector {
 	/**
-	 * @param args
+	 * @param args - параметры командной строки
 	 */
 	public static void main(String[] args) {
 		output("Java source code inspector.");
 	}
 
 	/**
-	 * Выводит сообщение в основной информационный поток
-	 * @param message
+	 * Выводит сообщение в основной информационный поток.
+	 * @param message - сообщение
 	 */
 	private static void output(String message) {
 		if(message == null || message.isEmpty()) {
@@ -26,8 +26,12 @@ public class SrcInspector {
 
 	/**
 	 * Вывод служебной информации и протокола работы.
-	 * @param message
+	 * @param message - сообщение
 	 */
 	private static void log(String message) {
+		if(message == null || message.isEmpty()) {
+			throw new IllegalArgumentException("Сообщение отсутствует");
+		}
+		System.out.println(message);
 	}
 }
