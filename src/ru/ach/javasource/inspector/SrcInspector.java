@@ -5,11 +5,15 @@ package ru.ach.javasource.inspector;
  *
  */
 public class SrcInspector {
+    private static final String programName = "Java source code inspector.";
+    private static final String version = "ver.1.0, 2015 - 2017";
 	/**
 	 * @param args - параметры командной строки
 	 */
 	public static void main(String[] args) {
-		output("Java source code inspector.");
+		output(programName);
+		output(version);
+		log("The program is started");
 	}
 
 	/**
